@@ -1,0 +1,290 @@
+ 
+ *{
+    box-sizing: border-box;
+    
+ }
+ body {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+ }
+ img{
+    max-width: 100%;
+ }
+ a{
+    text-decoration: none;
+ }
+
+   
+ 
+ .fondoEncabezado {
+    background-image: url("./img/imagenCentral.png");
+    background-repeat:no-repeat ;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    
+     
+    
+
+}
+.altura{
+    background-color:#ffffff33;
+    backdrop-filter: blur(2px);
+    border-radius: 45%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 70px;
+    width: 400px;
+    height:400px ; 
+      
+      
+
+}
+.btn{
+    margin-left: 25%;
+    background-color:#0d0c0c;
+    
+
+}
+.icons-contenedor{
+    background: rgb(100, 72, 36);
+}
+.icons-container{
+    
+   width: 100%;
+   height: 100px;
+   
+    display: flex;  
+   flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around;
+    text-align: center;
+    
+}
+.titulo-icons{
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+.icons-img{
+    width: 60px; 
+    height: 150px;  
+    align-content: space-between;
+    
+}
+.button{
+    padding: 20px;
+}
+.btn-icons{
+  background: black;
+  color: wheat;
+  border-radius: 20px; 
+  padding: 20px;
+  width: 22%;
+  display: flex;
+  margin: auto;
+  
+}
+.main-container{
+    width: 100%;
+    background: black;
+   
+   
+}
+
+    
+
+.colection {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    padding: 16 0;
+    
+}
+.colection__cover{
+    display: flex;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+ }
+
+
+.colection:nth-child(2) .colection__cover{
+    order:-1;
+    margin: 20px;
+    
+}
+
+.colection__content {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;    
+    align-items: start;
+        
+        
+    }
+    
+        
+
+
+    
+  
+
+.colection__title {
+    font-family: Raleway;
+    font-size: 50px;
+    font-weight: 500;
+}
+.colection__text {
+    font-family: Raleway;
+    font-size: 35px;
+    font-weight: 300;
+    border-bottom: 2px solid rgb(249, 28, 28);
+    padding-bottom: 20px;
+}
+
+
+.contacto-container{
+    width: 100%;
+    display: block;
+    background: rgb(255, 250, 244);
+}
+.contacto {
+    width: 100%;
+    padding: 45px;
+    display: flex;
+}
+.contacto-title{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    padding-top: 40px;
+}
+.contacto-text{
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    color: black;
+
+}
+.contacto-img {
+    width: 600px;
+    display: flex;
+    background-size: cover;
+}
+
+
+.contacto-form {
+    width: 100%;
+   display:flex;
+   flex-direction: column;
+   margin:10px;
+   padding: 10px;
+  
+   
+}
+.input-contact {
+    margin: 20px;
+    background-color: rgb(100, 72, 36) ;
+}
+.btn-contacto{
+    width: 15%;
+    padding: 16px;
+    display:flex;
+   flex-direction: column;     
+   
+   border: none; 
+   margin: 20px;    
+    font-size: 18px;
+    border-radius: 3px;
+    background-color: darkkhaki;
+    
+}
+
+.titulos{
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+}
+.recetario {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    padding: 16 0;
+    
+}
+.recetas{
+    display: flex;
+    flex-direction:column;
+    padding: 50px;    
+    align-items: start;
+}
+.titulo-receta{
+    margin-left: 55px;    
+    text-align: center;
+    justify-content: center;
+}
+.recetas-link{
+    margin-left: 55px;
+}
+
+
+
+
+
+/*Media query*/
+@media screen and (min-width:480px) and (max-width:940px){
+    .colection {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contacto-container{
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    } 
+    .contacto{
+        width: 100%;
+    }
+
+    .recetario{
+        height: 100%;
+        display: flex;
+        flex-flow: wrap;
+    }
+    .recetas{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:941px) and (max-width:1300px){
+    .fondoEncabezado{
+        height: 100%;
+    }
+    .fondoEncabezado{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+    }
+    .altura{
+        margin: 4rem;
+    }
+
+}
+
+@media screen and (min-width:1301px){
+    #contenedorBienvenida{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+    }
+    .contenedorTexto{
+        margin: 4rem;
+    }
+}
