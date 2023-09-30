@@ -1,22 +1,37 @@
  
  *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     
+ }
+ html{
+  font-family: 'Raleway', sans-serif;
  }
  body {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    font-family:  'Raleway', sans-serif;
+    
  }
  img{
     max-width: 100%;
  }
+ ul {
+  list-style: none;
+ }
  a{
     text-decoration: none;
  }
+ header {
+  font-family:'Raleway' ;
+ }
 
    
- 
+ .nav-link {
+  justify-content: space-between;
+ }
  .fondoEncabezado {
     background-image: url("./img/imagenCentral.png");
     background-repeat:no-repeat ;
@@ -25,124 +40,138 @@
     height: auto;
     display: flex;
     flex-direction: row-reverse;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
+    font-family: Raleway;
+    color: black; 
     
      
     
 
 }
 .altura{
+  
     background-color:#ffffff33;
+    font-size: 18px;
     backdrop-filter: blur(2px);
     border-radius: 45%;
     margin-top: 30px;
     margin-bottom: 30px;
     margin-right: 70px;
     width: 400px;
-    height:400px ; 
+    height:400px ;
+    
       
       
 
 }
 .btn{
     margin-left: 25%;
-    background-color:#0d0c0c;
-    
+    background-color:#0d0c0c77;
+    backdrop-filter: blur(1px);
+    border-radius: 30px;
+    border: none;
 
 }
 .icons-contenedor{
-    background: rgb(100, 72, 36);
+    background: #e8dbd3;
+    width: 100%;
+     
 }
 .icons-container{
-    
-   width: 100%;
-   height: 100px;
+  
+      
+  display: grid;  
+  grid-template-columns: repeat(3,1fr);
+  flex-wrap: nowrap; 
+  align-items: flex-end;
+  justify-content: space-between;
+  text-align: center;
    
-    display: flex;  
-   flex-wrap: wrap;
-    align-items: center;
-    justify-content:space-around;
-    text-align: center;
-    
+  
 }
 .titulo-icons{
+    
     justify-content: center;
-    text-align: center;
-    padding: 20px;
 }
-.icons-img{
-    width: 60px; 
-    height: 150px;  
-    align-content: space-between;
+.icons-img{  
+   width: 60px;
+    align-content: center;
+    padding-top: 20px;
+    
     
 }
-.button{
-    padding: 20px;
-}
+
 .btn-icons{
-  background: black;
-  color: wheat;
-  border-radius: 20px; 
+  grid-column: 2/3;
+  align-items:center;
+  justify-content: center;  
   padding: 20px;
-  width: 22%;
-  display: flex;
-  margin: auto;
   
+   
+  
+}
+.boton {
+  width: 140px; 
+  background:#1a191977;
+  backdrop-filter: blur(2px);
+  color: aliceblue;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+}
+.boton:hover {
+  background-color: #696565;
 }
 .main-container{
     width: 100%;
-    background: black;
+    background: rgb(244, 240, 240);
    
    
-}
-
-    
+}    
 
 .colection {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
-    padding: 16 0;
-    
+    padding:30px;
+    gap: 10px;
 }
 .colection__cover{
-    display: flex;
-    aspect-ratio: 3/2;
-    object-fit: contain;
+    width: 80%;
+    
+    
+    
+ }
+ .img_cover {
+  border-radius: 25px;
  }
 
-
-.colection:nth-child(2) .colection__cover{
-    order:-1;
-    margin: 20px;
+ .colection__content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;  
+  justify-content: center;  
+  align-items:center;
+      
+      
+  }
+  .colection:nth-child(2) .colection__cover{
+    order:-1;  
     
 }
 
-.colection__content {
-    display: flex;
-    flex-direction: column;
-    padding: 50px;    
-    align-items: start;
-        
-        
-    }
-    
-        
-
-
-    
   
 
 .colection__title {
     font-family: Raleway;
     font-size: 50px;
-    font-weight: 500;
+    font-weight: 700;
 }
 .colection__text {
     font-family: Raleway;
     font-size: 35px;
     font-weight: 300;
-    border-bottom: 2px solid rgb(249, 28, 28);
+    border-bottom: 2px solid #e68926ff;
     padding-bottom: 20px;
 }
 
@@ -150,25 +179,28 @@
 .contacto-container{
     width: 100%;
     display: block;
-    background: rgb(255, 250, 244);
+    background:  rgb(244, 240, 240);
 }
 .contacto {
     width: 100%;
-    padding: 45px;
+    padding: 20px;
     display: flex;
 }
 .contacto-title{
-    width: 100%;
+    
+    font-weight: 300;
     text-align: center;
-    font-size: 40px;
+    font-size: 45px;
+    letter-spacing: 3px;
     color: black;
-    padding-top: 40px;
+    padding-top: 20px;
+    padding-bottom: 0;
 }
 .contacto-text{
-    width: 100%;
+    width: 100%;    
     text-align: center;
-    font-size: 28px;
-    color: black;
+    font-size: 24px;
+    color: rgba(14, 14, 14, 0.967);
 
 }
 .contacto-img {
@@ -180,111 +212,306 @@
 
 .contacto-form {
     width: 100%;
+    font-size: 22px;       
    display:flex;
    flex-direction: column;
    margin:10px;
    padding: 10px;
+   
   
    
 }
 .input-contact {
     margin: 20px;
-    background-color: rgb(100, 72, 36) ;
+    background-color: rgb(57, 54, 54) ;
+    
+}
+.btn-icons {
+  display:flex;
+  flex-direction: column; 
+  justify-content: center;
+  
+  
+ 
 }
 .btn-contacto{
-    width: 15%;
-    padding: 16px;
-    display:flex;
-   flex-direction: column;     
-   
-   border: none; 
-   margin: 20px;    
-    font-size: 18px;
-    border-radius: 3px;
-    background-color: darkkhaki;
+  width: 10rem;
+  padding: 10px; 
+  margin-left: 20px;
+    color:white ;      
+    font-size: 30px;
+    font-weight: 400;
+    border-radius: 6px;
+    background-color: rgb(40, 38, 38);
+    border: none;
     
 }
-
-.titulos{
-    display: block;
-    text-align: center;
-    margin-top: 30px;
+.btn-contacto:hover {
+  background-color:#b97e3e ;
 }
-.recetario {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    align-items: center;
-    padding: 16 0;
+
+.aside {
+  width: 100%;
+	max-width: 1200px;
+  background-color: burlywood;
+}
+
+.contenedorR {
+	
+
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);	
+	gap: 40px;
+}
+.recetas {
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-top: 20px;
+  text-align: center;
+
+}
+
+.recetas >img {
+	border-radius: 20px;
+  margin-top: 20px;
+}
+
+
+.verRec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.footer {
+  height: 20rem;
+  background-color: #333; /* Cambia el color de fondo según tus preferencias */
+  padding: 20px 20px; /* Añade espaciado interno al footer */
+  text-align: start;
+  justify-content:start; /* Alinea el texto al centro si es necesario */
+
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer-col>img{
+  width: 100px;
+  height: 100px;
+}
+.footer-col {
+  flex: 1; /* Distribuye el espacio disponible de manera uniforme entre los elementos */
+  margin: 30px 60px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.footer-col:hover{
+  color: #e68926;
+}
+.footer-col h4{
+  font-size: 18px;
+  color: #ffffff; 
+  margin-bottom: 35px;
+  margin-left: 20px;
+  font-weight: 500;
+  color: #e68926;
+}
+.social-links {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+.social-links :hover {
+  color: #ff5722; 
+}
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Estilos para pantallas de hasta 768px de ancho */
+    body {
+      padding: 10px;
+    }
     
-}
-.recetas{
-    display: flex;
-    flex-direction:column;
-    padding: 50px;    
-    align-items: start;
-}
-.titulo-receta{
-    margin-left: 55px;    
-    text-align: center;
-    justify-content: center;
-}
-.recetas-link{
-    margin-left: 55px;
-}
-
-
-
-
-
-/*Media query*/
-@media screen and (min-width:480px) and (max-width:940px){
+    .fondoEncabezado {
+      flex-direction: column; /* Cambiar la dirección de flex a columna en pantallas pequeñas */
+    }
+    
+    .altura {
+      width: 100%; /* Hacer que el elemento ocupe todo el ancho de la pantalla */
+      margin: 10px auto; /* Centrar el elemento */
+    }
+    
+    .btn {
+      margin-left: 0; /* Eliminar el margen izquierdo en pantallas pequeñas */
+    }
+    
+    .icons-container {
+      flex-direction: column; /* Cambiar la dirección de flex a columna en pantallas pequeñas */
+    }
+    
+    .icons-img {
+      width: 40px; /* Reducir el tamaño de las imágenes de iconos */
+      height: auto;
+    }
+    
+    .btn-icons {
+      width: 50%; /* Hacer que los botones de iconos ocupen la mitad del ancho de la pantalla */
+    }
+    
     .colection {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
+      grid-template-columns: 1fr; /* Cambiar a una sola columna en pantallas pequeñas */
     }
-    .contacto-container{
-        display: flex;
-        width: 100%;
-        flex-wrap: wrap;
-    } 
-    .contacto{
-        width: 100%;
+    
+    .colection__cover {
+      order: 0; /* Restaurar el orden predeterminado */
+      margin: 10px 0; /* Espacio entre elementos en pantallas pequeñas */
     }
-
-    .recetario{
-        height: 100%;
-        display: flex;
-        flex-flow: wrap;
+    
+    .colection__content {
+      padding: 20px; /* Reducir el espacio de relleno en pantallas pequeñas */
     }
-    .recetas{
-        width: 100%;
+    
+    .colection__title {
+      font-size: 40px; /* Reducir el tamaño de la fuente del título */
     }
+    
+    .colection__text {
+      font-size: 28px; /* Reducir el tamaño de la fuente del texto */
+    }
+    
+    .recetario {
+      grid-template-columns: repeat(2, 1fr); /* Cambiar a dos columnas en pantallas pequeñas */
+    }
+    
+    .titulo-receta,
+    .recetas-link {
+      margin-left: 0; /* Eliminar el margen izquierdo en pantallas pequeñas */
+      text-align: center; /* Centrar el texto */
+    }
+  
+  @media (max-width: 767px) {
+    /* Estilos adicionales para pantallas de hasta 480px de ancho (tamaños de pantalla muy pequeños) */
+    
+    .colection {
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+    }
+    
+    .colection__title {
+        font-size: 35px; /* Reducir aún más el tamaño de la fuente del título */
+      }
+      
+      .colection__text {
+        font-size: 24px; /* Reducir aún más el tamaño de la fuente del texto */
+      }
+      .colection:nth-child(2) .colection__cover{
+          order:0;
+          margin: 20px;
+      }
+          .colection__cover {
+            aspect-ratio: 1/1; 
+           
+      
+     
+        
+      }
+      
+.header {
+  text-align: left;
 }
 
-@media screen and (min-width:941px) and (max-width:1300px){
-    .fondoEncabezado{
-        height: 100%;
-    }
-    .fondoEncabezado{
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-end;
-    }
-    .altura{
-        margin: 4rem;
-    }
-
+.header .navbar-brand {
+  width: auto;
 }
 
-@media screen and (min-width:1301px){
-    #contenedorBienvenida{
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-end;
-    }
-    .contenedorTexto{
-        margin: 4rem;
-    }
+
+@media (max-width: 768px) {
+ 
+  .navbar-collapse {
+    background-color: #333; 
+  }
+
+  .navbar-toggler {
+    color: #fff;
+  }
+
+   
+  .fondoEncabezado {
+    background-position: center; 
+  }
+
+  .altura {
+    width: 100%; 
+    margin-right: 0; 
+  }
+
+  .btn {
+    margin-left: 0; 
+  }
+  .icons-container {
+    grid-template-columns: repeat(3, 1fr); 
+    text-align: center; 
+  }
+
+  .btn-icons {
+    grid-column: 2/3; 
+    margin-top: 20px; 
+  }
+
+ 
+  .colection {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .colection__cover {
+    width: 100%;
+  }
+
+  .contacto {
+    flex-direction: column;
+  }
+
+  .contacto-img {
+    width: 100%; 
+  }
+
+  .contacto-form {
+    margin: 0; 
+  }
+
+  .btn-contacto {
+    width: 80%; 
+  }
+
+  .contenedorR {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px;
+
+  .recetas {
+    margin-right: 0; 
+    margin-left: 0; 
+  }
+
+  .footer {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(2 1fr);
+    height: 100%;
+  }
+  .social-links{
+    margin-left: 40px;
+  }
 }
