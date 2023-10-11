@@ -204,9 +204,10 @@
 
 }
 .contacto-img {
-    width: 600px;
+    width: 550px;
     display: flex;
     background-size: cover;
+    
 }
 
 
@@ -404,11 +405,18 @@
       text-align: center; /* Centrar el texto */
     }
   }
+<<<<<<< HEAD
   
  
 
 
 @media (max-width: 767px) {
+=======
+
+  
+  /* Media query para pantallas pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+>>>>>>> 47dd8f80c9c5bbb48db8c827f1d32feb1aa4b612
   .colection {
     display: block; /* Mostrar elementos uno debajo del otro */
   }
@@ -449,6 +457,14 @@
   }
   
   
+<<<<<<< HEAD
+=======
+  
+  
+  
+  
+  
+>>>>>>> 47dd8f80c9c5bbb48db8c827f1d32feb1aa4b612
   .btn-contacto {
     width: 50%; /* Reducir el ancho del botón de enviar */
   }
@@ -465,7 +481,11 @@
     width: 100%; /* Asegurarse de que las imágenes de recetas ocupen todo el ancho */
   }
 
+<<<<<<< HEAD
   
+=======
+  .titulo-receta,
+>>>>>>> 47dd8f80c9c5bbb48db8c827f1d32feb1aa4b612
   .recetas-link {
     text-align: center; /* Centrar el texto en las recetas */
   }
