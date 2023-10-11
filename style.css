@@ -204,9 +204,10 @@
 
 }
 .contacto-img {
-    width: 600px;
+    width: 550px;
     display: flex;
     background-size: cover;
+    
 }
 
 
@@ -224,6 +225,7 @@
 .input-contact {
     margin: 20px;
     background-color: rgb(57, 54, 54) ;
+    border-radius: 8px;
     
 }
 .btn-icons {
@@ -402,116 +404,121 @@
       margin-left: 0; /* Eliminar el margen izquierdo en pantallas pequeñas */
       text-align: center; /* Centrar el texto */
     }
+  }
+
   
-  @media (max-width: 767px) {
-    /* Estilos adicionales para pantallas de hasta 480px de ancho (tamaños de pantalla muy pequeños) */
-    
-    .colection {
-        grid-template-columns: repeat(1,1fr);
-        gap: 10px;
-    }
-    
-    .colection__title {
-        font-size: 35px; /* Reducir aún más el tamaño de la fuente del título */
-      }
-      
-      .colection__text {
-        font-size: 24px; /* Reducir aún más el tamaño de la fuente del texto */
-      }
-      .colection:nth-child(2) .colection__cover{
-          order:0;
-          margin: 20px;
-      }
-          .colection__cover {
-            aspect-ratio: 1/1; 
-           
-      
-     
-        
-      }
-      
-.header {
-  text-align: left;
-}
-
-.header .navbar-brand {
-  width: auto;
-}
-
-
+  /* Media query para pantallas pequeñas (hasta 768px) */
 @media (max-width: 768px) {
- 
-  .navbar-collapse {
-    background-color: #333; 
-  }
-
-  .navbar-toggler {
-    color: #fff;
-  }
-
-   
-  .fondoEncabezado {
-    background-position: center; 
-  }
-
-  .altura {
-    width: 100%; 
-    margin-right: 0; 
-  }
-
-  .btn {
-    margin-left: 0; 
-  }
-  .icons-container {
-    grid-template-columns: repeat(3, 1fr); 
-    text-align: center; 
-  }
-
-  .btn-icons {
-    grid-column: 2/3; 
-    margin-top: 20px; 
-  }
-
- 
   .colection {
-    grid-template-columns: repeat(1, 1fr);
+    display: block; /* Mostrar elementos uno debajo del otro */
   }
+
   .colection__cover {
+    width: 100%; /* Asegurarse de que la imagen ocupe todo el ancho */
+    margin: 10px 0; /* Agregar espacio entre las imágenes */
+  }
+
+  .colection__content {
+    padding: 10px; /* Reducir el espacio de relleno */
+  }
+
+  .colection__title {
+    font-size: 30px; /* Reducir el tamaño de fuente del título */
+  }
+
+  .colection__text {
+    font-size: 20px; /* Reducir el tamaño de fuente del texto */
+  }
+  
+  
+  .contacto-container {
     width: 100%;
+    display: flex;   
+    flex-direction: column; /* Cambiar la dirección de flex a columna */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
   }
-
-  .contacto {
-    flex-direction: column;
-  }
-
+  
   .contacto-img {
-    width: 100%; 
+    width: 80%;
+    margin-bottom: 20px; /* Agregar margen inferior para separar la imagen del formulario */
   }
-
+  
   .contacto-form {
-    margin: 0; 
+    width: 70%; /* Ajustar el ancho del formulario */
   }
-
+  
+  
+  
+  
+  
+  
+  
   .btn-contacto {
-    width: 80%; 
+    width: 50%; /* Reducir el ancho del botón de enviar */
   }
-
-  .contenedorR {
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px;
-
+  
+    
+  /* Cambios en las recetas para que aparezcan una debajo de la otra */
   .recetas {
-    margin-right: 0; 
-    margin-left: 0; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
-  .footer {
-    display: grid;
-    flex-direction: column;
-    grid-template-columns: repeat(2 1fr);
-    height: 100%;
+  .recetas img {
+    width: 100%; /* Asegurarse de que las imágenes de recetas ocupen todo el ancho */
   }
-  .social-links{
-    margin-left: 40px;
+
+  .titulo-receta,
+  .recetas-link {
+    text-align: center; /* Centrar el texto en las recetas */
+  }
+
+  /* Cambios en el footer para centrarlo más a la izquierda */
+  .footer {
+    height: auto; /* Cambiar la altura del footer para ajustar al contenido */
+    padding: 20px 0; /* Añadir espacio interno al footer */
+    text-align: center; /* Centrar el texto del footer */
+  }
+
+  .footer-col {
+    flex: none; /* Eliminar la distribución uniforme del espacio */
+    margin: 10px 0; /* Reducir el margen en elementos del footer */
+  }
+
+  .footer-col h4 {
+    font-size: 20px; /* Aumentar el tamaño de fuente en los títulos del footer */
+    margin-bottom: 10px; /* Reducir el espacio entre títulos y elementos de lista */
+  }
+
+  .footer-menu {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente los elementos */
+    align-items: center; /* Centrar verticalmente los elementos */
+  }
+
+  .footer-menu a {
+    margin: 0 10px; /* Agregar espacio horizontal entre "Menu" y "Navegación" */
+  }
+
+  .footer-icons {
+    display: flex;
+    flex-direction: column; /* Colocar los iconos en una columna */
+    align-items: center; /* Centrar los iconos verticalmente */
+  }
+
+  .social-links {
+    display: flex;
+    flex-direction: column; /* Colocar los enlaces de redes sociales en una columna */
+    align-items: center; /* Centrar los enlaces verticalmente */
+  }
+
+  .social-links a {
+    margin: 10px 0; /* Agregar espacio vertical entre los enlaces de redes sociales */
+  }
+
+  .social-links i {
+    font-size: 30px; /* Aumentar el tamaño de fuente de los íconos de redes sociales */
   }
 }
