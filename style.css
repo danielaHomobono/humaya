@@ -1,332 +1,346 @@
  
+ 
  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
- }
- html{
-  font-family: 'Raleway', sans-serif;
- }
- body {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    font-family:  'Raleway', sans-serif;
-    
- }
- img{
-    max-width: 100%;
- }
- ul {
-  list-style: none;
- }
- a{
-    text-decoration: none;
- }
- header {
-  font-family:'Raleway' ;
- }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+html{
+font-family: 'Raleway', sans-serif;
+}
+body {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family:  'Raleway', sans-serif;
+  
+}
+img{
+  max-width: 100%;
+}
+ul {
+list-style: none;
+}
+a{
+  text-decoration: none;
+}
+header {
+font-family:'Raleway' ;
+}
 
+ 
+.nav-link {
+justify-content: space-between;
+}
+.fondoEncabezado {
+  background-image: url("./img/imagenCentral.png");
+  background-repeat:no-repeat ;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;    
+  font-family: Raleway;
+  color: black; 
+  
    
- .nav-link {
-  justify-content: space-between;
- }
- .fondoEncabezado {
-    background-image: url("./img/imagenCentral.png");
-    background-repeat:no-repeat ;
-    background-size: cover;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;    
-    font-family: Raleway;
-    color: black; 
-    
-     
-    
+  
 
 }
 .altura{
+
+  background-color:#ffffff33;
+  font-size: 18px;
+  backdrop-filter: blur(2px);
+  border-radius: 45%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-right: 70px;
+  width: 400px;
+  height:400px ;
   
-    background-color:#ffffff33;
-    font-size: 18px;
-    backdrop-filter: blur(2px);
-    border-radius: 45%;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-right: 70px;
-    width: 400px;
-    height:400px ;
     
-      
-      
+    
 
 }
 .btn{
-    margin-left: 25%;
-    background-color:#0d0c0c77;
-    backdrop-filter: blur(1px);
-    border-radius: 30px;
-    border: none;
+  margin-left: 25%;
+  background-color:#0d0c0c77;
+  backdrop-filter: blur(1px);
+  border-radius: 30px;
+  border: none;
 
 }
 .icons-contenedor{
-    background: #e8dbd3;
-    width: 100%;
-     
+  background: #e8dbd3;
+  width: 100%;
+   
 }
 .icons-container{
-  
-      
-  display: grid;  
-  grid-template-columns: repeat(3,1fr);
-  flex-wrap: nowrap; 
-  align-items: flex-end;
-  justify-content: space-between;
-  text-align: center;
-   
-  
+
+    
+display: grid;  
+grid-template-columns: repeat(3,1fr);
+flex-wrap: nowrap; 
+align-items: flex-end;
+justify-content: space-between;
+text-align: center;
+ 
+
 }
 .titulo-icons{
-    
-    justify-content: center;
+  
+  justify-content: center;
 }
 .icons-img{  
-   width: 60px;
-    align-content: center;
-    padding-top: 20px;
-    
-    
+ width: 60px;
+  align-content: center;
+  padding-top: 20px;
+  
+  
 }
 
 .btn-icons{
-  grid-column: 2/3;
-  align-items:center;
-  justify-content: center;  
-  padding: 20px;
-  
-   
-  
+grid-column: 2/3;
+align-items:center;
+justify-content: center;  
+padding: 20px;
+
+ 
+
 }
 .boton {
-  width: 140px; 
-  background:#1a191977;
-  backdrop-filter: blur(2px);
-  color: aliceblue;
-  padding: 14px;
-  border-radius: 30px;
-  border: none;
+width: 140px; 
+background:#1a191977;
+backdrop-filter: blur(2px);
+color: aliceblue;
+padding: 14px;
+border-radius: 30px;
+border: none;
 }
 .boton:hover {
-  background-color: #696565;
+background-color: #696565;
 }
 .main-container{
-    width: 100%;
-    background: rgb(244, 240, 240);
-   
-   
+  width: 100%;
+  background: rgb(244, 240, 240);
+ 
+ 
 }    
 
 .colection {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    padding:30px;
-    gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  padding:30px;
+  gap: 10px;
 }
 .colection__cover{
-    width: 80%;
-    
-    
-    
- }
- .img_cover {
-  border-radius: 25px;
- }
-
- .colection__content {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;  
-  justify-content: center;  
-  align-items:center;
-      
-      
-  }
-  .colection:nth-child(2) .colection__cover{
-    order:-1;  
-    
+  width: 80%;
+  
+  
+  
+}
+.img_cover {
+border-radius: 25px;
 }
 
+.colection__content {
+display: flex;
+flex-direction: column;
+padding: 20px;  
+justify-content: center;  
+align-items:center;
+    
+    
+}
+.colection:nth-child(even) .colection__cover{
+  order:-1;  
   
+}
+
+
 
 .colection__title {
-    font-family: Raleway;
-    font-size: 50px;
-    font-weight: 700;
+  font-family: Raleway;
+  font-size: 50px;
+  font-weight: 700;
 }
 .colection__text {
-    font-family: Raleway;
-    font-size: 35px;
-    font-weight: 300;
-    border-bottom: 2px solid #e68926ff;
-    padding-bottom: 20px;
+  font-family: Raleway;
+  font-size: 35px;
+  font-weight: 300;
+  border-bottom: 2px solid #e68926ff;
+  padding-bottom: 20px;
 }
 
 
 .contacto-container{
-    width: 100%;
-    display: block;
-    background:  rgb(244, 240, 240);
+  width: 100%;
+  display: block;
+  background:  rgb(244, 240, 240);
 }
 .contacto {
-    width: 100%;
-    padding: 20px;
-    display: flex;
+  width: 100%;
+  padding: 20px;
+  display: flex;
 }
 .contacto-title{
-    
-    font-weight: 300;
-    text-align: center;
-    font-size: 45px;
-    letter-spacing: 3px;
-    color: black;
-    padding-top: 20px;
-    padding-bottom: 0;
+  
+  font-weight: 300;
+  text-align: center;
+  font-size: 45px;
+  letter-spacing: 3px;
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 0;
 }
 .contacto-text{
-    width: 100%;    
-    text-align: center;
-    font-size: 24px;
-    color: rgba(14, 14, 14, 0.967);
+  width: 100%;    
+  text-align: center;
+  font-size: 24px;
+  color: rgba(14, 14, 14, 0.967);
 
 }
-.contacto-img {
-    width: 550px;
-    display: flex;
-    background-size: cover;
-    
-}
+/*.contacto-img {
+  width: 550px;
+  display: flex;
+  background-size:cover;
+  border-radius: 12px;
+  
+}*/
 
 
 .contacto-form {
-    width: 100%;
-    font-size: 22px;       
-   display:flex;
-   flex-direction: column;
-   margin:10px;
-   padding: 10px;
-   
-  
-   
-}
-.input-contact {
-    margin: 20px;
-    background-color: rgb(57, 54, 54) ;
-    border-radius: 8px;
-    
-}
-.btn-icons {
-  display:flex;
-  flex-direction: column; 
-  justify-content: center;
-  
-  
+  width: 100%;
+  font-size: 22px;       
+ display:flex;
+ flex-direction: column;
+ margin:10px;
+ padding: 10px;
+ 
+
  
 }
+.input-contact {
+  margin: 20px;
+  background-color: rgb(57, 54, 54) ;
+  border-radius: 8px;
+  
+}
+.btn-icons {
+display:flex;
+flex-direction: column; 
+justify-content: center;
+
+
+
+}
 .btn-contacto{
-  width: 10rem;
-  padding: 10px; 
-  margin-left: 20px;
-    color:white ;      
-    font-size: 30px;
-    font-weight: 400;
-    border-radius: 6px;
-    background-color: rgb(40, 38, 38);
-    border: none;
-    
+width: 10rem;
+padding: 10px; 
+margin-left: 20px;
+  color:white ;      
+  font-size: 30px;
+  font-weight: 400;
+  border-radius: 6px;
+  background-color: rgb(40, 38, 38);
+  border: none;
+  
 }
 .btn-contacto:hover {
-  background-color:#b97e3e ;
+background-color:#b97e3e ;
 }
 
 .aside {
-  width: 100%;
-	max-width: 1200px;
-  background-color: burlywood;
+width: 100%;
+max-width: 1200px;
+background-color: burlywood;
 }
 
 .contenedorR {
-	
 
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);	
-	gap: 40px;
+
+display: grid;
+grid-template-columns: repeat(4, 1fr);	
+gap: 40px;
 }
 .recetas {
-  margin-right: 20px;
-  margin-left: 20px;
-  padding-top: 20px;
-  text-align: center;
+margin-right: 20px;
+margin-left: 20px;
+padding-top: 20px;
+text-align: center;
 
 }
 
 .recetas >img {
-	border-radius: 20px;
-  margin-top: 20px;
+border-radius: 20px;
+margin-top: 20px;
 }
 
 
 .verRec {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 
 .footer {
-  height: 20rem;
-  background-color: #333; /* Cambia el color de fondo según tus preferencias */
-  padding: 20px 20px; /* Añade espaciado interno al footer */
-  text-align: start;
-  justify-content:start; /* Alinea el texto al centro si es necesario */
+height: 20rem;
+background-color: #333; /* Cambia el color de fondo según tus preferencias */
+padding: 20px 20px; /* Añade espaciado interno al footer */
+text-align: start;
+justify-content:start; /* Alinea el texto al centro si es necesario */
 
-  display: flex;
-  justify-content: space-between;
+display: flex;
+justify-content: space-between;
 }
 .footer .footer-col>img{
-  width: 100px;
-  height: 100px;
+width: 100px;
+height: 100px;
 }
 .footer-col {
-  flex: 1; /* Distribuye el espacio disponible de manera uniforme entre los elementos */
-  margin: 30px 60px;
-  color: #ffffff;
-  cursor: pointer;
+flex: 1; /* Distribuye el espacio disponible de manera uniforme entre los elementos */
+margin: 30px 60px;
+color: #ffffff;
+cursor: pointer;
 }
 .footer-col:hover{
-  color: #e68926;
+color: #e68926;
 }
 .footer-col h4{
-  font-size: 18px;
-  color: #ffffff; 
-  margin-bottom: 35px;
-  margin-left: 20px;
-  font-weight: 500;
-  color: #e68926;
+font-size: 18px;
+color: #ffffff; 
+margin-bottom: 35px;
+margin-left: 20px;
+font-weight: 500;
+color: #e68926;
 }
-.social-links {
-  display: flex;
-  flex-direction: column;
+.footer-icons {
+display: flex;
+flex-direction: column; /* Colocar los iconos en una columna */
+align-items: center; /* Centrar los iconos verticalmente */
+}
+.footer-col .social-links {
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-left: 40px;
+}
+.social-links i {
+
+
+font-size: 25px; /* Aumentar el tamaño de fuente de los íconos de redes sociales */
 }
 
 
 
 
 .social-links :hover {
-  color: #ff5722; 
+color: #ff5722; 
 }
 
 
@@ -334,195 +348,197 @@
 
 
 
- 
 
 
 
 
- 
+
+
 
 
 @media (min-width: 768px) and (max-width: 991px) {
-    /* Estilos para pantallas de hasta 768px de ancho */
-    body {
-      padding: 10px;
-    }
-    
-    .fondoEncabezado {
-      flex-direction: column; /* Cambiar la dirección de flex a columna en pantallas pequeñas */
-    }
-    
-    .altura {
-      width: 100%; /* Hacer que el elemento ocupe todo el ancho de la pantalla */
-      margin: 10px auto; /* Centrar el elemento */
-    }
-    
-    .btn {
-      margin-left: 0; /* Eliminar el margen izquierdo en pantallas pequeñas */
-    }
-    
-    .icons-container {
-      flex-direction: column; /* Cambiar la dirección de flex a columna en pantallas pequeñas */
-    }
-    
-    .icons-img {
-      width: 40px; /* Reducir el tamaño de las imágenes de iconos */
-      height: auto;
-    }
-    
-    .btn-icons {
-      width: 50%; /* Hacer que los botones de iconos ocupen la mitad del ancho de la pantalla */
-    }
-    
-    .colection {
-      grid-template-columns: 1fr; /* Cambiar a una sola columna en pantallas pequeñas */
-    }
-    
-    .colection__cover {
-      order: 0; /* Restaurar el orden predeterminado */
-      margin: 10px 0; /* Espacio entre elementos en pantallas pequeñas */
-    }
-    
-    .colection__content {
-      padding: 20px; /* Reducir el espacio de relleno en pantallas pequeñas */
-    }
-    
-    .colection__title {
-      font-size: 40px; /* Reducir el tamaño de la fuente del título */
-    }
-    
-    .colection__text {
-      font-size: 28px; /* Reducir el tamaño de la fuente del texto */
-    }
-    
-    .recetario {
-      grid-template-columns: repeat(2, 1fr); /* Cambiar a dos columnas en pantallas pequeñas */
-    }
-    
-    
-    .recetas-link {
-      margin-left: 0; /* Eliminar el margen izquierdo en pantallas pequeñas */
-      text-align: center; /* Centrar el texto */
-    }
+  /* Estilos para pantallas de hasta 768px de ancho */
+  body {
+    padding: 10px;
   }
-
   
- 
-
-
-@media (max-width: 767px) {
-
-
+  .fondoEncabezado {
+    flex-direction: column; /* Cambiar la dirección de flex a columna en pantallas pequeñas */
+  }
   
-  /* Media query para pantallas pequeñas (hasta 768px) */
-
+  .altura {
+    width: 100%; /* Hacer que el elemento ocupe todo el ancho de la pantalla */
+    margin: 10px auto; /* Centrar el elemento */
+  }
+  
+  .btn {
+    margin-left: 0; /* Eliminar el margen izquierdo en pantallas pequeñas */
+  }
+  
+  .icons-container {
+    flex-direction: column; /* Cambiar la dirección de flex a columna en pantallas pequeñas */
+  }
+  
+  .icons-img {
+    width: 40px; /* Reducir el tamaño de las imágenes de iconos */
+    height: auto;
+  }
+  
+  .btn-icons {
+    width: 50%; /* Hacer que los botones de iconos ocupen la mitad del ancho de la pantalla */
+  }
+  
   .colection {
-    display: block; /* Mostrar elementos uno debajo del otro */
+    grid-template-columns: 1fr; /* Cambiar a una sola columna en pantallas pequeñas */
   }
-
+  
   .colection__cover {
-    width: 100%; /* Asegurarse de que la imagen ocupe todo el ancho */
-    margin: 10px 0; /* Agregar espacio entre las imágenes */
+    order: 0; /* Restaurar el orden predeterminado */
+    margin: 10px 0; /* Espacio entre elementos en pantallas pequeñas */
   }
-
+  
   .colection__content {
-    padding: 10px; /* Reducir el espacio de relleno */
+    padding: 20px; /* Reducir el espacio de relleno en pantallas pequeñas */
   }
-
+  
   .colection__title {
-    font-size: 30px; /* Reducir el tamaño de fuente del título */
+    font-size: 40px; /* Reducir el tamaño de la fuente del título */
   }
-
+  
   .colection__text {
-    font-size: 20px; /* Reducir el tamaño de fuente del texto */
+    font-size: 28px; /* Reducir el tamaño de la fuente del texto */
   }
   
-  
-  .contacto-container {
-    width: 100%;
-    display: flex;   
-    flex-direction: column; /* Cambiar la dirección de flex a columna */
-    align-items: center; /* Centrar horizontalmente */
-    justify-content: center; /* Centrar verticalmente */
+  .recetario {
+    grid-template-columns: repeat(2, 1fr); /* Cambiar a dos columnas en pantallas pequeñas */
   }
   
-  .contacto-img {
-    width: 80%;
-    margin-bottom: 20px; /* Agregar margen inferior para separar la imagen del formulario */
-  }
-  
-  .contacto-form {
-    width: 70%; /* Ajustar el ancho del formulario */
-  }
-  
-  
- 
-
-  .btn-contacto {
-    width: 50%; /* Reducir el ancho del botón de enviar */
-  }
-  
-    
-  /* Cambios en las recetas para que aparezcan una debajo de la otra */
-  .recetas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .recetas img {
-    width: 100%; /* Asegurarse de que las imágenes de recetas ocupen todo el ancho */
-  } 
-
- 
+  .titulo-receta,
   .recetas-link {
-    text-align: center; /* Centrar el texto en las recetas */
+    margin-left: 0; /* Eliminar el margen izquierdo en pantallas pequeñas */
+    text-align: center; /* Centrar el texto */
   }
+}
 
-  /* Cambios en el footer para centrarlo más a la izquierda */
-  .footer {
-    height: auto; /* Cambiar la altura del footer para ajustar al contenido */
-    padding: 20px 0; /* Añadir espacio interno al footer */
-    text-align: center; /* Centrar el texto del footer */
-  }
 
-  .footer-col {
-    flex: none; /* Eliminar la distribución uniforme del espacio */
-    margin: 10px 0; /* Reducir el margen en elementos del footer */
-  }
+/* Media query para pantallas pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+.colection {
+  display: block; /* Mostrar elementos uno debajo del otro */
+}
 
-  .footer-col h4 {
-    font-size: 20px; /* Aumentar el tamaño de fuente en los títulos del footer */
-    margin-bottom: 10px; /* Reducir el espacio entre títulos y elementos de lista */
-  }
+.colection__cover {
+  width: 100%; /* Asegurarse de que la imagen ocupe todo el ancho */
+  margin: 10px 0; /* Agregar espacio entre las imágenes */
+}
 
-  .footer-menu {
-    display: flex;
-    justify-content: center; /* Centrar horizontalmente los elementos */
-    align-items: center; /* Centrar verticalmente los elementos */
-  }
+.colection__content {
+  padding: 10px; /* Reducir el espacio de relleno */
+}
 
-  .footer-menu a {
-    margin: 0 10px; /* Agregar espacio horizontal entre "Menu" y "Navegación" */
-  }
+.colection__title {
+  font-size: 30px; /* Reducir el tamaño de fuente del título */
+}
 
-  .footer-icons {
-    display: flex;
-    flex-direction: column; /* Colocar los iconos en una columna */
-    align-items: center; /* Centrar los iconos verticalmente */
-  }
+.colection__text {
+  font-size: 20px; /* Reducir el tamaño de fuente del texto */
+}
 
-  .social-links {
-    display: flex;
-    flex-direction: column; /* Colocar los enlaces de redes sociales en una columna */
-    align-items: center; /* Centrar los enlaces verticalmente */
-  }
 
-  .social-links a {
-    margin: 10px 0; /* Agregar espacio vertical entre los enlaces de redes sociales */
-  }
+.contacto-container {
+  width: 100%;
+  display: flex;   
+  flex-direction: column; /* Cambiar la dirección de flex a columna */
+  align-items: center; /* Centrar horizontalmente */
+  justify-content: center; /* Centrar verticalmente */
+}
 
-  .social-links i {
-    font-size: 30px; /* Aumentar el tamaño de fuente de los íconos de redes sociales */
-  }
+/*.contacto-img {
+  width: 80%;
+  margin-bottom: 20px; 
+}/*
+
+.contacto-form {
+  width: 70%; /* Ajustar el ancho del formulario
+}
+
+*/
+
+
+
+
+
+
+.btn-contacto {
+  width: 50%; /* Reducir el ancho del botón de enviar */
+}
+
+.contenedorR {
+
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);	
+  gap: 40px;
+} 
+/* Cambios en las recetas para que aparezcan una debajo de la otra */
+.recetas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recetas .img {
+  width: 100%; /* Asegurarse de que las imágenes de recetas ocupen todo el ancho */
+}
+
+
+.recetas-link {
+  text-align: center; /* Centrar el texto en las recetas */
+}
+.footer {
+  height: auto; /* Cambiar la altura del footer para ajustar al contenido */
+  padding: 20px 0; /* Añadir espacio interno al footer */
+  text-align: center; /* Centrar el texto del footer a la izquierda */
+}
+/* Cambios en el footer para centrarlo más a la izquierda */
+.footer-col {
+  flex: none; 
+  margin: 10px 0;  
+ 
+
+}
+
+.footer-col h4 {
+  font-size: 16px; /* Reducir el tamaño de fuente en los títulos del footer */
+  margin-bottom: 10px; /* Reducir el espacio entre títulos y elementos de lista */
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column; /* Colocar los elementos en una fila */
+  align-items: center; /* Centrar los elementos verticalmente */
+  justify-content: space-between; /* Espaciar el menú y los iconos de redes sociales */
+}
+
+.footer-icons {
+  display: flex; /* Alinear los iconos en una fila */
+  align-items: center; /* Centrar los iconos verticalmente */
+  margin: 0; /* Eliminar el margen entre los iconos de redes sociales */
+}
+
+.footer-col .social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Alinear los enlaces de redes sociales en una fila */
+}
+
+.social-links a {
+  
+  margin-left: 10px; /* Agregar espacio horizontal entre los enlaces de redes sociales */
+}
+
+.social-links i {
+ 
+  font-size: 24px; /* Aumentar el tamaño de fuente de los íconos de redes sociales */
+}
 }
